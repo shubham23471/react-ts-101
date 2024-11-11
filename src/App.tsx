@@ -15,7 +15,11 @@ function App() {
     <>
       <div>
         {" "}
-        <Alert />
+        {/* <Alert children="An alert" /> */}
+        <Alert>
+          {" "}
+          <h1> An Alert</h1>
+        </Alert>
       </div>
       <div>
         <ListGroup
