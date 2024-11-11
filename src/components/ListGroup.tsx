@@ -4,10 +4,13 @@ import { useState } from "react";
 interface Props {
   items: string[];
   heading: string;
+  //Passing function via Props: passing the value of selected item to App.tsx
+  // by convention using var name as on<Varible-name>
+  onSelectItem: (item: string) => void;
 }
 
 // parameter: props of Type Props
-function ListGroup({ items, heading }: Props) {
+function ListGroup({ items, heading, onSelectItem }: Props) {
   const [selectedIndex, setSelectedIndex] = useState(-1);
   return (
     <>
@@ -27,6 +30,7 @@ function ListGroup({ items, heading }: Props) {
             // onClick={() => console.log(item, index)}
             onClick={() => {
               setSelectedIndex(index);
+              onSelectItem(item);
             }}
           >
             {item}
