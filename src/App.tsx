@@ -13,7 +13,10 @@ function App() {
 
   return (
     <>
-      <div className="alert  alert-primary"> An Alert</div>
+      <div>
+        {" "}
+        <Alert />
+      </div>
       <div>
         <ListGroup
           items={items}

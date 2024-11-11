@@ -1,5 +1,9 @@
+// interface Props {
+//   text: string;
+// }
+
 const Alert = () => {
-  return <div>Alert</div>;
+  return <div className="alert alert-primary">An Alert</div>;
 };
 
 export default Alert;
