@@ -1,4 +1,5 @@
 import ListGroup from "./components/ListGroup";
+import Alert from "./components/Alert";
 
 // we use this component like regular HTML tag
 function App() {
@@ -11,13 +12,16 @@ function App() {
   };
 
   return (
-    <div>
-      <ListGroup
-        items={items}
-        heading="Cities"
-        onSelectItem={handleSelectItem}
-      />{" "}
-    </div>
+    <>
+      <div className="alert  alert-primary"> An Alert</div>
+      <div>
+        <ListGroup
+          items={items}
+          heading="Cities"
+          onSelectItem={handleSelectItem}
+        />{" "}
+      </div>
+    </>
   );
 }
 

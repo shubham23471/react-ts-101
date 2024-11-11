@@ -6,6 +6,7 @@ npm run dev
 
 hmr: Hot Module replacement
 jsx: Javascript XML
+rafce: reactArrowFunctionExportComponent
 
 # Build-in Features in React
 
