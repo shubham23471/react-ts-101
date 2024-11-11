@@ -1,7 +1,7 @@
 import ListGroup from "./components/ListGroup";
 import Alert from "./components/Alert";
+import Button from "./components/Button";
 
-// we use this component like regular HTML tag
 function App() {
   let items = ["New York", "San Franciso", "Tokyo", "London", "Paris"];
 
@@ -27,6 +27,9 @@ function App() {
           heading="Cities"
           onSelectItem={handleSelectItem}
         />{" "}
+      </div>
+      <div>
+        <Button onClick={() => console.log("Clicked")}>My button</Button>
       </div>
     </>
   );
