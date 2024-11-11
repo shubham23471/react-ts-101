@@ -2,14 +2,7 @@ import { useState } from "react";
 
 function ListGroup() {
   let items = ["New York", "San Franciso", "Tokyo", "London", "Paris"];
-  // this is a local variable to the this function and react doesn't
-  // know about this function. so we have use Hook
-  let selectedIndex = 0;
-  //
-  const arr = useState(-1);
-  arr[0]; // variable (eg: selectedIndex)
-  arr[1]; // updater function
-
+  const [selectedIndex, setSelectedIndex] = useState(-1);
   return (
     <>
       <h1>List</h1>
@@ -27,7 +20,7 @@ function ListGroup() {
             key={item}
             // onClick={() => console.log(item, index)}
             onClick={() => {
-              selectedIndex = index;
+              setSelectedIndex(index);
             }}
           >
             {item}
